@@ -1,0 +1,102 @@
+:root {
+  --bg: #0b1026;
+  --panel: #121a3a;
+  --ink: #f3ead3;
+  --muted: #a99f86;
+  --gold: #d4af37;
+  --gold-soft: #d4af3744;
+  --ok: #8fd19e;
+  --no: #e08a7a;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(ellipse at 50% -10%, #2a3570 0%, transparent 60%),
+    var(--bg);
+  color: var(--ink);
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 19px;
+}
+
+main {
+  max-width: 640px;
+  padding: 40px 16px;
+  text-align: center;
+}
+
+.helm {
+  display: inline-block;
+  margin: 0;
+  text-align: left;
+  font-size: 16px;
+  color: var(--gold);
+  text-shadow: 0 0 10px var(--gold-soft);
+}
+
+h1 {
+  margin: 16px 0 4px;
+  font-family: var(--font-display), serif;
+  font-size: 42px;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+}
+
+.title {
+  margin: 0;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.tag {
+  margin: 18px 0 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 20px;
+  margin: 28px auto 0;
+  padding: 18px 22px;
+  max-width: 460px;
+  text-align: left;
+  background: var(--panel);
+  border: 1px solid var(--gold-soft);
+}
+
+dt {
+  font-family: var(--font-display), serif;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  align-self: center;
+}
+
+dd {
+  margin: 0;
+}
+
+a {
+  color: var(--gold);
+}
+
+.ok {
+  color: var(--ok);
+}
+
+.no {
+  color: var(--no);
+}
+
+.orders {
+  margin-top: 28px;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--muted);
+}

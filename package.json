@@ -1,0 +1,27 @@
+{
+  "name": "sir-nitpicksalot",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "demo": "tsx --conditions react-server scripts/demo.ts",
+    "test": "COPY_TRAP=off tsx --conditions react-server scripts/test-demands.ts"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  },
+  "description": "The code reviewer that has never once said LGTM.",
+  "license": "MIT"
+}
